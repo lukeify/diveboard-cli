@@ -8,8 +8,8 @@
 import ArgumentParser
 
 @main
-struct DiveboardCliTool: ParsableCommand {   
+struct DiveboardCliTool: ParsableCommand {
     public func run() throws {
-        GitHubDivefilesRetrieval.retrieve(identifier: "foo")
+        GitHubDivefilesRetrieval.retrieve(identifier: "lukeify")
     }
 }
