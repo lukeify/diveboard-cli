@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A320E6DC2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */; };
 		A320E6DE2CBB233B00F977C1 /* DivefileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */; };
+		A39EDD1F2CBC81EC00478BBC /* ProcessExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */; };
 		A3A7809B2CB3411B00B922DB /* DiveboardCliTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A7809A2CB3411B00B922DB /* DiveboardCliTool.swift */; };
 		A3A780AC2CB34B0300B922DB /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = A3A780AB2CB34B0300B922DB /* ArgumentParser */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubDivefilesRetrieval.swift; sourceTree = "<group>"; };
 		A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivefileRepository.swift; sourceTree = "<group>"; };
+		A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessExtensions.swift; sourceTree = "<group>"; };
 		A3A780972CB3411B00B922DB /* diveboard-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "diveboard-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A7809A2CB3411B00B922DB /* DiveboardCliTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveboardCliTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				A3A7809A2CB3411B00B922DB /* DiveboardCliTool.swift */,
 				A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */,
 				A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */,
+				A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */,
 			);
 			path = "diveboard-cli";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A7809B2CB3411B00B922DB /* DiveboardCliTool.swift in Sources */,
+				A39EDD1F2CBC81EC00478BBC /* ProcessExtensions.swift in Sources */,
 				A320E6DC2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift in Sources */,
 				A320E6DE2CBB233B00F977C1 /* DivefileRepository.swift in Sources */,
 			);
