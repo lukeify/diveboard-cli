@@ -33,6 +33,7 @@
 		A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessExtensions.swift; sourceTree = "<group>"; };
 		A3A780972CB3411B00B922DB /* diveboard-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "diveboard-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A7809A2CB3411B00B922DB /* DiveboardCliTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveboardCliTool.swift; sourceTree = "<group>"; };
+		A3AA29B52CFA7E5000D3483E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A3AB3FC02CC3139F00F6E370 /* DotsPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsPool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +52,7 @@
 		A3A7808E2CB3411B00B922DB = {
 			isa = PBXGroup;
 			children = (
+				A3AA29B52CFA7E5000D3483E /* README.md */,
 				A3A780992CB3411B00B922DB /* diveboard-cli */,
 				A3A780982CB3411B00B922DB /* Products */,
 				A3A780AA2CB34B0300B922DB /* Frameworks */,
