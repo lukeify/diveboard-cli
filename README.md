@@ -5,7 +5,7 @@ Diveboard can manage:
 
 * Your installed apps, packages, and CLI tools (via `brew`).
 * Some macOS configuration (via `defaults`).
-* Your dotfiles and other configurations.
+* Your dotfiles and other configurations.
 * Divergence from state, when your Mac no longer represents your `divefiles` repository, with options to reconcile.
 * Manual macOS configuration that cannot be controlled programmatically, by providing suggestions to you.
 
