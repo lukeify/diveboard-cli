@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A320E6DC2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */; };
+		A320E6DE2CBB233B00F977C1 /* DivefileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */; };
+		A39EDD1F2CBC81EC00478BBC /* ProcessExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */; };
 		A3A7809B2CB3411B00B922DB /* DiveboardCliTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A7809A2CB3411B00B922DB /* DiveboardCliTool.swift */; };
 		A3A780AC2CB34B0300B922DB /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = A3A780AB2CB34B0300B922DB /* ArgumentParser */; };
+		A3AB3FC12CC3139F00F6E370 /* DotsPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB3FC02CC3139F00F6E370 /* DotsPool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +28,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubDivefilesRetrieval.swift; sourceTree = "<group>"; };
+		A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivefileRepository.swift; sourceTree = "<group>"; };
+		A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessExtensions.swift; sourceTree = "<group>"; };
 		A3A780972CB3411B00B922DB /* diveboard-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "diveboard-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A7809A2CB3411B00B922DB /* DiveboardCliTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveboardCliTool.swift; sourceTree = "<group>"; };
+		A3AA29B52CFA7E5000D3483E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A3AB3FC02CC3139F00F6E370 /* DotsPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsPool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 		A3A7808E2CB3411B00B922DB = {
 			isa = PBXGroup;
 			children = (
+				A3AA29B52CFA7E5000D3483E /* README.md */,
 				A3A780992CB3411B00B922DB /* diveboard-cli */,
 				A3A780982CB3411B00B922DB /* Products */,
 				A3A780AA2CB34B0300B922DB /* Frameworks */,
@@ -60,7 +70,11 @@
 		A3A780992CB3411B00B922DB /* diveboard-cli */ = {
 			isa = PBXGroup;
 			children = (
+				A3AB3FBF2CC3138B00F6E370 /* Pools */,
 				A3A7809A2CB3411B00B922DB /* DiveboardCliTool.swift */,
+				A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */,
+				A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */,
+				A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */,
 			);
 			path = "diveboard-cli";
 			sourceTree = "<group>";
@@ -70,6 +84,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3AB3FBF2CC3138B00F6E370 /* Pools */ = {
+			isa = PBXGroup;
+			children = (
+				A3AB3FC02CC3139F00F6E370 /* DotsPool.swift */,
+			);
+			path = Pools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +125,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					A3A780962CB3411B00B922DB = {
 						CreatedOnToolsVersion = 15.2;
@@ -137,6 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A7809B2CB3411B00B922DB /* DiveboardCliTool.swift in Sources */,
+				A39EDD1F2CBC81EC00478BBC /* ProcessExtensions.swift in Sources */,
+				A320E6DC2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift in Sources */,
+				A3AB3FC12CC3139F00F6E370 /* DotsPool.swift in Sources */,
+				A320E6DE2CBB233B00F977C1 /* DivefileRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +203,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -240,6 +267,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -265,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TLZAXH2BJ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TLZAXH2BJ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
