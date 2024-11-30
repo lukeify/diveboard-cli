@@ -8,5 +8,7 @@
 import Foundation
 
 struct DivefileRepository {
-    
+    static func locationOnDisk() -> String {
+        return "\(NSHomeDirectory())/.divefiles"
+    }
 }

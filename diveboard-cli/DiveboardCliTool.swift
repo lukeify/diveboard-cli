@@ -12,7 +12,6 @@ struct DiveboardCliTool: ParsableCommand {
     static var configuration = CommandConfiguration(
         )
     
-    
     @Argument(help: "The command to run using diveboard.")
     var command: DiveboardCommand
     

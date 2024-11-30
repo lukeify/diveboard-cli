@@ -12,7 +12,7 @@ extension Process {
     
     public func clone(identifier: String) throws {
         executableURL = Process.gitExecutable
-        arguments = ["clone", "https://github.com/\(identifier)/divefiles.git", "\(NSHomeDirectory())/divefiles"]
+        arguments = ["clone", "https://github.com/\(identifier)/divefiles.git", DivefileRepository.locationOnDisk()]
         try run()
         waitUntilExit()
     }
@@ -26,7 +26,7 @@ extension Process {
     
     public func rm() throws {
         executableURL = URL(filePath: "/bin/rm")
-        arguments = ["-rf", "\(NSHomeDirectory())/divefiles"]
+        arguments = ["-rf", DivefileRepository.locationOnDisk()]
         try run()
     }
 }
