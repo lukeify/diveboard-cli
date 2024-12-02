@@ -21,16 +21,22 @@ struct DiveboardCliTool: ParsableCommand {
     @Option(name: .long, help: "The GitHub account to use for a divefile repository.")
     var githubAccountIdentifier: String
     
+    @Option(name: .long, help: "The directory to use as the divefile repository.")
+    var localDirectoryPath: String
+    
     public func run() throws {
         switch source {
         case .github:
             GitHubDivefilesRetrieval.retrieve(identifier: githubAccountIdentifier)
+        case .local:
+            LocalDirectoryRetrieval.retrieve(path: localDirectoryPath)
         }
     }
 }
 
 enum DivefileRepositorySource: String, ExpressibleByArgument {
     case github = "github"
+    case local = "local"
 }
 
 enum DiveboardCommand: String, ExpressibleByArgument {

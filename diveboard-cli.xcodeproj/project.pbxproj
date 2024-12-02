@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31D94242CFD3F1300C20478 /* LocalDirectoryRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D94232CFD3F1300C20478 /* LocalDirectoryRetrieval.swift */; };
 		A320E6DC2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */; };
 		A320E6DE2CBB233B00F977C1 /* DivefileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */; };
 		A39EDD1F2CBC81EC00478BBC /* ProcessExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A31D94232CFD3F1300C20478 /* LocalDirectoryRetrieval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDirectoryRetrieval.swift; sourceTree = "<group>"; };
 		A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubDivefilesRetrieval.swift; sourceTree = "<group>"; };
 		A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivefileRepository.swift; sourceTree = "<group>"; };
 		A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessExtensions.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */,
 				A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */,
 				A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */,
+				A31D94232CFD3F1300C20478 /* LocalDirectoryRetrieval.swift */,
 			);
 			path = "diveboard-cli";
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				A39EDD1F2CBC81EC00478BBC /* ProcessExtensions.swift in Sources */,
 				A320E6DC2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift in Sources */,
 				A3AB3FC12CC3139F00F6E370 /* DotsPool.swift in Sources */,
+				A31D94242CFD3F1300C20478 /* LocalDirectoryRetrieval.swift in Sources */,
 				A320E6DE2CBB233B00F977C1 /* DivefileRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
