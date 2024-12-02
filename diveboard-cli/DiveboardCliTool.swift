@@ -9,7 +9,7 @@ import ArgumentParser
 
 @main
 struct DiveboardCliTool: ParsableCommand {
-    static var configuration = CommandConfiguration(
+    static let configuration = CommandConfiguration(
         subcommands: [ApplyCommand.self]
         )
 }
@@ -20,7 +20,7 @@ enum DivefileRepositorySource: String, ExpressibleByArgument {
 }
 
 struct ApplyCommand: ParsableCommand {
-    static var configuration = CommandConfiguration(commandName: "apply")
+    static let configuration = CommandConfiguration(commandName: "apply")
         
     @Option(name: .long, help: "The location to retrieve the divefiles repository from.")
     var source: DivefileRepositorySource = .github

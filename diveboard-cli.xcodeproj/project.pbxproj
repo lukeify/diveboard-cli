@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		A31D94232CFD3F1300C20478 /* LocalDirectoryRetrieval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDirectoryRetrieval.swift; sourceTree = "<group>"; };
+		A31D94292CFD747700C20478 /* diveboard-cli-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diveboard-cli-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A320E6DB2CBB22DD00F977C1 /* GitHubDivefilesRetrieval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubDivefilesRetrieval.swift; sourceTree = "<group>"; };
 		A320E6DD2CBB233B00F977C1 /* DivefileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivefileRepository.swift; sourceTree = "<group>"; };
 		A39EDD1E2CBC81EC00478BBC /* ProcessExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessExtensions.swift; sourceTree = "<group>"; };
@@ -39,7 +40,18 @@
 		A3AB3FC02CC3139F00F6E370 /* DotsPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsPool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A31D942A2CFD747700C20478 /* diveboard-cli-tests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "diveboard-cli-tests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		A31D94262CFD747700C20478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3A780942CB3411B00B922DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +68,7 @@
 			children = (
 				A3AA29B52CFA7E5000D3483E /* README.md */,
 				A3A780992CB3411B00B922DB /* diveboard-cli */,
+				A31D942A2CFD747700C20478 /* diveboard-cli-tests */,
 				A3A780982CB3411B00B922DB /* Products */,
 				A3A780AA2CB34B0300B922DB /* Frameworks */,
 			);
@@ -65,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A780972CB3411B00B922DB /* diveboard-cli */,
+				A31D94292CFD747700C20478 /* diveboard-cli-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +114,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A31D94282CFD747700C20478 /* diveboard-cli-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31D942D2CFD747700C20478 /* Build configuration list for PBXNativeTarget "diveboard-cli-tests" */;
+			buildPhases = (
+				A31D94252CFD747700C20478 /* Sources */,
+				A31D94262CFD747700C20478 /* Frameworks */,
+				A31D94272CFD747700C20478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A31D942A2CFD747700C20478 /* diveboard-cli-tests */,
+			);
+			name = "diveboard-cli-tests";
+			packageProductDependencies = (
+			);
+			productName = "diveboard-cli-tests";
+			productReference = A31D94292CFD747700C20478 /* diveboard-cli-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A3A780962CB3411B00B922DB /* diveboard-cli */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3A7809E2CB3411B00B922DB /* Build configuration list for PBXNativeTarget "diveboard-cli" */;
@@ -127,9 +163,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					A31D94282CFD747700C20478 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					A3A780962CB3411B00B922DB = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -152,11 +191,29 @@
 			projectRoot = "";
 			targets = (
 				A3A780962CB3411B00B922DB /* diveboard-cli */,
+				A31D94282CFD747700C20478 /* diveboard-cli-tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A31D94272CFD747700C20478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A31D94252CFD747700C20478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3A780932CB3411B00B922DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +230,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A31D942E2CFD747700C20478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TLZAXH2BJ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluewing.diveboard-cli-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A31D942F2CFD747700C20478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TLZAXH2BJ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluewing.diveboard-cli-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
 		A3A7809C2CB3411B00B922DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -235,6 +324,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -292,6 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluewing.diveboard-cli";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -304,7 +395,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluewing.diveboard-cli";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -317,13 +408,22 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluewing.diveboard-cli";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A31D942D2CFD747700C20478 /* Build configuration list for PBXNativeTarget "diveboard-cli-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31D942E2CFD747700C20478 /* Debug */,
+				A31D942F2CFD747700C20478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3A780922CB3411B00B922DB /* Build configuration list for PBXProject "diveboard-cli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
